@@ -225,7 +225,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   neat
-  newrelic_rpm (>= 3.6.7)
+  newrelic_rpm (>= 3.7.3)
   pg
   pry-rails
   rack-timeout
