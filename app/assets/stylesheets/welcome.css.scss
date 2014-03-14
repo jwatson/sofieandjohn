@@ -1,0 +1,101 @@
+header {
+  $header-height: 80px;
+  $ul-height: 24px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: $header-height;
+  position: fixed;
+
+  nav {
+    float: right;
+    width: 600px;
+    height: $header-height;
+    font-family: "Ubuntu", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+
+    ul {
+      margin-top: ($header-height - $ul-height) / 2;
+      height: $ul-height;
+    }
+
+    li {
+      margin-left: 20px;
+      display: inline;
+    }
+
+    a {
+      color: white;
+      opacity: 0.6;
+      padding-bottom: 4px;
+
+      &:hover {
+        color: white;  // Override color set by Bitters.
+        opacity: 1.0;
+      }
+
+      &.selected {
+        opacity: 1.0;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+}
+
+section {
+  @include box-sizing(content-box);
+
+  &:nth-of-type(odd) {
+    height: 600px;
+    margin: 0;
+    padding: 200px 0 260px 0;
+  }
+
+  &:nth-of-type(even) {
+    background-color: white;
+    height: 300px;
+    margin: 0 auto;
+    padding: 200px 0;
+    overflow: hidden;
+  }
+
+  &.slide1 {
+    background: image-url("dock.jpg") 50% 0 / cover no-repeat fixed rgb(81, 65, 138);
+
+    h1, h2, h3 {
+      font-family: "Sail", serif;
+      color: rgb(254, 249, 250);
+      text-align: center;
+      text-shadow: 0 1px 2px black;
+    }
+
+    h1 {
+      font-size: 64px;
+    }
+
+    div.heart {
+      background: image-url("glyphicons_012_heart.png") no-repeat;
+      width: 24px;
+      height: 22px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    h2 {
+      font-size: 48px;
+      margin-top: 10px;
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+  }
+
+  &.slide3 {
+    background: image-url("cliffs.jpg") 50% 0 / cover no-repeat fixed;
+  }
+
+  &.slide5 {
+    background: image-url("london_eye.jpg") 50% 0 / cover no-repeat fixed;
+  }
+}
