@@ -15,7 +15,11 @@ gem 'pg'
 gem 'rack-timeout'
 gem 'rails', '>= 4.0.0'
 gem 'recipient_interceptor'
-gem 'sass-rails'
+
+### See
+### http://stackoverflow.com/questions/22392862/undefined-method-environment-for-nilnilclass-when-importing-bootstrap
+gem 'sass-rails', '~> 4.0.0'
+
 gem 'simple_form'
 gem 'title'
 gem 'uglifier'
