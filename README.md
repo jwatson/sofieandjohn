@@ -1,8 +1,8 @@
-Wedding
-=======
+# Sofie and John's Wedding Website
 
-Getting Started
----------------
+This is the source code for Sofie and John's Wedding website.
+
+## Getting Started
 
 This repository comes equipped with a self-setup script:
 
@@ -14,8 +14,7 @@ After setting up, you can run the application using [foreman]:
 
 [foreman]: http://ddollar.github.io/foreman/
 
-Guidelines
-----------
+## Guidelines
 
 Use the following guides for getting things done, programming well, and
 programming in style.
