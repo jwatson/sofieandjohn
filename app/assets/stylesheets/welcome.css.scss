@@ -11,7 +11,7 @@ header {
     float: right;
     width: 600px;
     height: $header-height;
-    font-family: "Ubuntu", "Helvetica Neue", sans-serif;
+    font-family: $Ubuntu;
     font-size: 20px;
 
     ul {
@@ -63,7 +63,7 @@ section {
     background: image-url("dock.jpg") 50% 0 / cover no-repeat fixed rgb(81, 65, 138);
 
     h1, h2, h3 {
-      font-family: "Sail", serif;
+      font-family: $Sail;
       color: rgb(254, 249, 250);
       text-align: center;
       text-shadow: 0 1px 2px black;

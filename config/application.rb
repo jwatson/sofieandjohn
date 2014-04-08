@@ -15,6 +15,9 @@ module Wedding
   class Application < Rails::Application
     config.active_record.default_timezone = :utc
 
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+
     config.generators do |generate|
       generate.helper false
       generate.javascript_engine false
