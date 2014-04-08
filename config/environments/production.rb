@@ -20,6 +20,11 @@ Wedding::Application.configure do
   # For large-scale production use, consider using a caching reverse proxy like nginx, varnish or squid.
   # config.action_dispatch.rack_cache = true
 
+  # Use CloudFront to distribute static assets. We'll still keep Rails
+  # configured to serve assets, rather than sync them to S3.
+  config.action_controller.asset_host = 'cdn.sofieandjohn.com'
+  config.static_cache_control = 'public, max-age=31536000'
+
   # Enable Rails's static asset server.
   config.serve_static_assets = true
 
