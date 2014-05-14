@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  L.mapbox.map('map', 'jwatson.i4bh1ae1');
+
   // Smooth scroll to the anchor target in the nav bar.
   $('header nav a[href *= #]').each(function scroll() {
       var targetAnchor = $('[name=' + this.hash.slice(1) + ']');

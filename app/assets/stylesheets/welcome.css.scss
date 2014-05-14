@@ -42,6 +42,7 @@ header {
   }
 }
 
+
 section {
   @include box-sizing(content-box);
 
@@ -53,14 +54,32 @@ section {
 
   &:nth-of-type(even) {
     background-color: white;
-    height: 300px;
+    font-family: $Ubuntu;
+    height: 500px;
     margin: 0 auto;
-    padding: 200px 0;
+    padding: 150px 10% 200px 10%;
     overflow: hidden;
+
+    h1 {
+      font-family: $Sail;
+      text-align: center;
+      font-size: 64px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-family: $Ubuntu;
+      font-size: 30px;
+    }
+
+    h3 {
+      font-family: $Ubuntu;
+      font-size: 20px;
+    }
   }
 
   &.slide1 {
-    background: image-url("dock.jpg") 50% 0 / cover no-repeat fixed rgb(81, 65, 138);
+    background: image-url("dock.jpg") 50% 0 / cover no-repeat fixed rgb(85, 76, 129);
 
     h1, h2, h3 {
       font-family: $Sail;
@@ -91,11 +110,43 @@ section {
     }
   }
 
+  &.slide2 {
+    div#map {
+      width: 100%;
+      height: 300px;
+      margin-top: 40px;
+    }
+  }
+
   &.slide3 {
-    background: image-url("cliffs.jpg") 50% 0 / cover no-repeat fixed;
+    background: image-url("ireland.jpg") 50% 0 / cover no-repeat fixed;
+    color: white;
+    font-family: $Ubuntu;
+
+    div.vcard {
+    }
+  }
+
+  &.slide4 {
+    div.vcard {
+      padding: 20px 0;
+
+      div.org {
+        font-size: 24px;
+        font-weight: 800;
+      }
+    }
   }
 
   &.slide5 {
-    background: image-url("london_eye.jpg") 50% 0 / cover no-repeat fixed;
+    background: image-url("london_eye.jpg") 50% 0 / cover no-repeat fixed rgb(166, 117, 81);
+  }
+
+  &.slide7 {
+    background: image-url("richmond.jpg") 50% 0 / cover no-repeat fixed rgb(166, 117, 81);
+  }
+
+  &.slide9 {
+    background: image-url("hampton.jpg") 50% 0 / cover no-repeat fixed rgb(166, 117, 81);
   }
 }
